@@ -30,9 +30,10 @@ def solution(A):
 문제를 잘 읽어볼 것, 그리고 설령 원래 가정이 맞다고 해도 2개 비교가 더 간단하고 일반적인 방법임  
 
 # sth more
-
+```{.python}
 def solution(A):  
-    return reduce(lambda x,y: x^y, A)  
+    return reduce(lambda x,y: x^y, A)
+```
 
 bitwise 연산... 천재냐 오마에?  
 특정 숫자의 bitwise xor 연산을 두번 수행하면 다시 돌아오는 원리 이용  
