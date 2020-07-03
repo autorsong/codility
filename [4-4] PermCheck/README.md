@@ -10,13 +10,16 @@
 
 간단한 문제인 만큼 여러 가지의 솔루션이 가능한 것 같음  
 
+```{.python}
 if max(A) != len(A) or len(set(A)) != len(A):  
     return 0  
 return 1  
+```
 
 이런 간단하고 멋있는 방법도 있고  
 bitwise 연산자를 사용하는 방법  
 
+```{.python}
 for i in range(1, N+1):  
     xorSum ^= i ^ A[i-1]  
 
@@ -24,6 +27,7 @@ if xorSum == 0:
     return 1  
 else:  
     return 0  
+```
 
 도 있다.  
 bitwise 진짜 신박하다...  

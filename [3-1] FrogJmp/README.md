@@ -4,8 +4,10 @@
 
 # solution
 
-def solution(X, Y, D):  
+```{.python}
+def solution(X, Y, D):
     return int((Y - X) / D) if (Y - X) % D == 0 else int((Y - X) / D) + 1  
+```
 
 간단하다.  
 올림 함수를 쓰면 더 간단했을듯  

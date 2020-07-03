@@ -5,10 +5,10 @@
 
 # solution
 
+    ```.{python}
 def solution(A):  
-    A.sort()  
+    A.sort()
     
-
     if len(A) == 1:
         return A[0]
     else:
@@ -20,6 +20,7 @@ def solution(A):
             for i in range(1, len(A)-1):
                 if A[i - 1] != A[i] and A[i] != A[i + 1]:
                     return A[i]
+    ```
 
 대체적으로 맞지만 '짝'이라는 게 중요했음  
 배열 안의 짝을 못 지은 숫자가 배열에서 유일하게 나오는 것은 아니다  
