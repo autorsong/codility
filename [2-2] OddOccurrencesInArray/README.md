@@ -5,7 +5,7 @@
 
 # solution
 
-    ```.{python}
+    ```{.python}
 def solution(A):  
     A.sort()
     
