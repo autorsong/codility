@@ -4,8 +4,7 @@
 배열 속 홀로 있는 짝을 못 지은 숫자를 찾아 리턴하라
 
 # solution
-
-    ```.{python}
+```{.python}
 def solution(A):  
     A.sort()
     
@@ -20,7 +19,7 @@ def solution(A):
             for i in range(1, len(A)-1):
                 if A[i - 1] != A[i] and A[i] != A[i + 1]:
                     return A[i]
-    ```
+```
 
 대체적으로 맞지만 '짝'이라는 게 중요했음  
 배열 안의 짝을 못 지은 숫자가 배열에서 유일하게 나오는 것은 아니다  
@@ -31,9 +30,10 @@ def solution(A):
 문제를 잘 읽어볼 것, 그리고 설령 원래 가정이 맞다고 해도 2개 비교가 더 간단하고 일반적인 방법임  
 
 # sth more
-
+```{.python}
 def solution(A):  
-    return reduce(lambda x,y: x^y, A)  
+    return reduce(lambda x,y: x^y, A)
+```
 
 bitwise 연산... 천재냐 오마에?  
 특정 숫자의 bitwise xor 연산을 두번 수행하면 다시 돌아오는 원리 이용  
