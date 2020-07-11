@@ -1,4 +1,7 @@
 def solution(A):
+    if len(A) == 0:
+        return 0
+
     profit = 0
     minimal = A[0]
 
